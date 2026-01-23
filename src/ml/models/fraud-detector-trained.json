@@ -1,0 +1,574 @@
+{
+  "version": "1.0.0",
+  "trained": true,
+  "featureStats": {
+    "totalAwarded": {
+      "mean": 1903729167.45125,
+      "std": 5041179766.14289,
+      "min": 127858107.66,
+      "max": 25739952424.440002,
+      "median": 509443963.15999997,
+      "p25": 246769021.88,
+      "p75": 1800933390.5800004,
+      "p90": 2242730449.03,
+      "p95": 3486204096.1600003,
+      "count": 24
+    },
+    "avgAward": {
+      "mean": 392564431.0375436,
+      "std": 339775005.1883169,
+      "min": 127858107.66,
+      "max": 1349853665,
+      "median": 247844976,
+      "p25": 182138817.17,
+      "p75": 489099894.19,
+      "p90": 902736463.47,
+      "p95": 1288878052,
+      "count": 24
+    },
+    "awardCount": {
+      "mean": 4.166666666666667,
+      "std": 8.214147686901073,
+      "min": 1,
+      "max": 42,
+      "median": 1,
+      "p25": 1,
+      "p75": 3,
+      "p90": 7,
+      "p95": 10,
+      "count": 24
+    },
+    "maxAward": {
+      "mean": 682366951.8908333,
+      "std": 1110640377.1589584,
+      "min": 127858107.66,
+      "max": 5668542889.12,
+      "median": 285065456.07,
+      "p25": 205010308.89,
+      "p75": 673140164.34,
+      "p90": 1349853665,
+      "p95": 1467822926.94,
+      "count": 24
+    },
+    "minAward": {
+      "mean": 304289155.97333336,
+      "std": 324864512.6094582,
+      "min": 113051544.69,
+      "max": 1349853665,
+      "median": 164581022.48,
+      "p25": 136002341.26,
+      "p75": 337650000,
+      "p90": 508426596.31,
+      "p95": 1288878052,
+      "count": 24
+    },
+    "awardStdDev": {
+      "mean": 100802825.92807627,
+      "std": 212925972.8532923,
+      "min": 0,
+      "max": 934540025.5499933,
+      "median": 0,
+      "p25": 0,
+      "p75": 126089300.88956532,
+      "p90": 246710229.12575957,
+      "p95": 565086463.47,
+      "count": 24
+    },
+    "concentrationIndex": {
+      "mean": 0.679199676559343,
+      "std": 0.3649511462201606,
+      "min": 0.07917379965990078,
+      "max": 1,
+      "median": 1,
+      "p25": 0.33861744162533164,
+      "p75": 1,
+      "p90": 1,
+      "p95": 1,
+      "count": 24
+    },
+    "agencyConcentration": {
+      "mean": 0.9851190476190476,
+      "std": 0.0665718217055858,
+      "min": 0.6666666666666666,
+      "max": 1,
+      "median": 1,
+      "p25": 1,
+      "p75": 1,
+      "p90": 1,
+      "p95": 1,
+      "count": 24
+    },
+    "yearOverYearGrowth": {
+      "mean": 0.5449038596726244,
+      "std": 0.8207929699605567,
+      "min": 0,
+      "max": 2.926274821248618,
+      "median": 0,
+      "p25": 0,
+      "p75": 0.7993103896208653,
+      "p90": 2.0505761747140614,
+      "p95": 2.3738607477894798,
+      "count": 24
+    },
+    "soleSourceRatio": {
+      "mean": 0,
+      "std": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "p25": 0,
+      "p75": 0,
+      "p90": 0,
+      "p95": 0,
+      "count": 24
+    },
+    "highRiskCategoryRatio": {
+      "mean": 0.22500000000000006,
+      "std": 0.36644564045354316,
+      "min": 0,
+      "max": 1,
+      "median": 0,
+      "p25": 0,
+      "p75": 0.4,
+      "p90": 1,
+      "p95": 1,
+      "count": 24
+    },
+    "defenseRatio": {
+      "mean": 0.7351190476190476,
+      "std": 0.4295245409225462,
+      "min": 0,
+      "max": 1,
+      "median": 1,
+      "p25": 0.6666666666666666,
+      "p75": 1,
+      "p90": 1,
+      "p95": 1,
+      "count": 24
+    },
+    "largeAwardRatio": {
+      "mean": 0.001984126984126984,
+      "std": 0.009515538736731579,
+      "min": 0,
+      "max": 0.047619047619047616,
+      "median": 0,
+      "p25": 0,
+      "p75": 0,
+      "p90": 0,
+      "p95": 0,
+      "count": 24
+    },
+    "specialtyRisk": {
+      "mean": 1.1486658042051046,
+      "std": 0.5066629199551269,
+      "min": 1,
+      "max": 3,
+      "median": 1,
+      "p25": 1,
+      "p75": 1,
+      "p90": 1,
+      "p95": 3,
+      "count": 82709
+    },
+    "exclusionSeverity": {
+      "mean": 3.903916139718773,
+      "std": 1.0619121755131933,
+      "min": 2,
+      "max": 5,
+      "median": 3,
+      "p25": 3,
+      "p75": 5,
+      "p90": 5,
+      "p95": 5,
+      "count": 82709
+    }
+  },
+  "fraudPatterns": {
+    "byFraudType": {
+      "off_label_marketing": {
+        "count": 2,
+        "totalAmount": 5300000000,
+        "avgAmount": 2650000000,
+        "indicators": {}
+      },
+      "kickbacks": {
+        "count": 10,
+        "totalAmount": 6355450000,
+        "avgAmount": 635545000,
+        "indicators": {}
+      },
+      "safety_data_failure": {
+        "count": 1,
+        "totalAmount": 3000000000,
+        "avgAmount": 3000000000,
+        "indicators": {}
+      },
+      "upcoding": {
+        "count": 3,
+        "totalAmount": 890000000,
+        "avgAmount": 296666666.6666667,
+        "indicators": {}
+      },
+      "unnecessary_services": {
+        "count": 3,
+        "totalAmount": 857700000,
+        "avgAmount": 285900000,
+        "indicators": {}
+      },
+      "cost_report_fraud": {
+        "count": 1,
+        "totalAmount": 840000000,
+        "avgAmount": 840000000,
+        "indicators": {}
+      },
+      "false_claims": {
+        "count": 10,
+        "totalAmount": 1638200000,
+        "avgAmount": 163820000,
+        "indicators": {}
+      },
+      "quality_issues": {
+        "count": 1,
+        "totalAmount": 302000000,
+        "avgAmount": 302000000,
+        "indicators": {}
+      },
+      "medicaid_rebate_fraud": {
+        "count": 1,
+        "totalAmount": 260000000,
+        "avgAmount": 260000000,
+        "indicators": {}
+      },
+      "whistleblower_case": {
+        "count": 1,
+        "totalAmount": 15000000,
+        "avgAmount": 15000000,
+        "indicators": {}
+      },
+      "research_fraud": {
+        "count": 1,
+        "totalAmount": 8200000,
+        "avgAmount": 8200000,
+        "indicators": {}
+      },
+      "unnecessary_admissions": {
+        "count": 1,
+        "totalAmount": 48000000,
+        "avgAmount": 48000000,
+        "indicators": {}
+      },
+      "quality_fraud": {
+        "count": 2,
+        "totalAmount": 743000000,
+        "avgAmount": 371500000,
+        "indicators": {}
+      },
+      "false_certifications": {
+        "count": 1,
+        "totalAmount": 264000000,
+        "avgAmount": 264000000,
+        "indicators": {}
+      },
+      "defective_pricing": {
+        "count": 4,
+        "totalAmount": 423700000,
+        "avgAmount": 105925000,
+        "indicators": {}
+      },
+      "labor_mischarging": {
+        "count": 3,
+        "totalAmount": 35500000,
+        "avgAmount": 11833333.333333334,
+        "indicators": {}
+      },
+      "overbilling": {
+        "count": 5,
+        "totalAmount": 1495700000,
+        "avgAmount": 299140000,
+        "indicators": {}
+      },
+      "billing_fraud": {
+        "count": 1,
+        "totalAmount": 2600000,
+        "avgAmount": 2600000,
+        "indicators": {}
+      },
+      "excessive_pricing": {
+        "count": 1,
+        "totalAmount": 16100000,
+        "avgAmount": 16100000,
+        "indicators": {}
+      }
+    },
+    "byIndustry": {
+      "pharmaceutical": {
+        "count": 8,
+        "totalAmount": 7674000000,
+        "fraudTypes": {}
+      },
+      "hospital_system": {
+        "count": 2,
+        "totalAmount": 855700000,
+        "fraudTypes": {}
+      },
+      "dialysis": {
+        "count": 1,
+        "totalAmount": 400000000,
+        "fraudTypes": {}
+      },
+      "laboratory": {
+        "count": 1,
+        "totalAmount": 302000000,
+        "fraudTypes": {}
+      },
+      "substance_abuse_treatment": {
+        "count": 1,
+        "totalAmount": 2000000,
+        "fraudTypes": {}
+      },
+      "behavioral_health": {
+        "count": 1,
+        "totalAmount": 15000000,
+        "fraudTypes": {}
+      },
+      "academic_medical_center": {
+        "count": 1,
+        "totalAmount": 8200000,
+        "fraudTypes": {}
+      },
+      "medical_devices": {
+        "count": 2,
+        "totalAmount": 499000000,
+        "fraudTypes": {}
+      },
+      "rehabilitation": {
+        "count": 1,
+        "totalAmount": 48000000,
+        "fraudTypes": {}
+      },
+      "pharmacy": {
+        "count": 1,
+        "totalAmount": 5000000,
+        "fraudTypes": {}
+      },
+      "health_it": {
+        "count": 1,
+        "totalAmount": 18250000,
+        "fraudTypes": {}
+      },
+      "defense": {
+        "count": 5,
+        "totalAmount": 451200000,
+        "fraudTypes": {}
+      },
+      "consulting": {
+        "count": 1,
+        "totalAmount": 377500000,
+        "fraudTypes": {}
+      },
+      "it_services": {
+        "count": 4,
+        "totalAmount": 573200000,
+        "fraudTypes": {}
+      },
+      "construction": {
+        "count": 1,
+        "totalAmount": 579000000,
+        "fraudTypes": {}
+      },
+      "security": {
+        "count": 1,
+        "totalAmount": 2600000,
+        "fraudTypes": {}
+      },
+      "research": {
+        "count": 2,
+        "totalAmount": 8000000,
+        "fraudTypes": {}
+      }
+    },
+    "indicators": {
+      "high_marketing_spend": 1,
+      "physician_payments": 4,
+      "rapid_sales_growth": 1,
+      "aggressive_sales_tactics": 1,
+      "billing_above_peers": 2,
+      "high_complexity_codes": 2,
+      "rapid_revenue_growth": 1,
+      "referral_concentration": 1,
+      "joint_ventures": 1,
+      "high_test_volume": 1,
+      "quality_complaints": 1,
+      "speaker_programs": 3,
+      "consultant_fees": 1,
+      "pricing_manipulation": 1,
+      "rebate_avoidance": 1,
+      "copay_assistance_abuse": 1,
+      "excessive_payments": 1,
+      "sham_advisory_boards": 1,
+      "high_em_codes": 1,
+      "excessive_drug_testing": 1,
+      "billing_irregularities": 2,
+      "lab_payments": 1,
+      "inducement": 1,
+      "rapid_expansion": 1,
+      "ownership_changes": 1,
+      "research_grants": 1,
+      "industry_payments": 1,
+      "product_liability": 1,
+      "marketing_practices": 1,
+      "length_of_stay_outliers": 1,
+      "prescription_irregularities": 1,
+      "billing_anomalies": 1,
+      "referral_payments": 1,
+      "consulting_fees": 1,
+      "product_defects": 1,
+      "warranty_claims": 1,
+      "recall_issues": 1,
+      "manufacturing_issues": 1,
+      "quality_compliance": 1,
+      "rapid_contract_growth": 1,
+      "cost_overruns": 2,
+      "sole_source": 3,
+      "large_modifications": 1,
+      "labor_rate_issues": 2,
+      "timecard_irregularities": 1,
+      "cost_plus_contracts": 3,
+      "labor_mischarging": 2,
+      "rapid_growth": 2,
+      "subcontractor_issues": 2,
+      "overseas_contracts": 1,
+      "subcontractor_kickbacks": 1,
+      "labor_qualifications": 1,
+      "false_certifications": 1,
+      "cost_data_issues": 1,
+      "subcontractor_markups": 1,
+      "excessive_modifications": 1,
+      "task_order_bundling": 1,
+      "security_clearance_fraud": 1,
+      "software_licensing": 1,
+      "maintenance_charges": 1,
+      "excessive_profit_margins": 1,
+      "acquisition_strategy": 1,
+      "indirect_cost_allocation": 1
+    },
+    "commonFactors": [
+      {
+        "indicator": "physician_payments",
+        "count": 4,
+        "weight": 0.11764705882352941
+      },
+      {
+        "indicator": "speaker_programs",
+        "count": 3,
+        "weight": 0.08823529411764706
+      },
+      {
+        "indicator": "sole_source",
+        "count": 3,
+        "weight": 0.08823529411764706
+      },
+      {
+        "indicator": "cost_plus_contracts",
+        "count": 3,
+        "weight": 0.08823529411764706
+      },
+      {
+        "indicator": "billing_above_peers",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "high_complexity_codes",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "billing_irregularities",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "cost_overruns",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "labor_rate_issues",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "labor_mischarging",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "rapid_growth",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "subcontractor_issues",
+        "count": 2,
+        "weight": 0.058823529411764705
+      },
+      {
+        "indicator": "high_marketing_spend",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "rapid_sales_growth",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "aggressive_sales_tactics",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "rapid_revenue_growth",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "referral_concentration",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "joint_ventures",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "high_test_volume",
+        "count": 1,
+        "weight": 0.029411764705882353
+      },
+      {
+        "indicator": "quality_complaints",
+        "count": 1,
+        "weight": 0.029411764705882353
+      }
+    ]
+  },
+  "thresholds": {
+    "largeAwardMultiple": 3,
+    "growthRateAnomaly": 2,
+    "agencyConcentration": 0.8,
+    "soleSourceRatio": 0.5,
+    "billingZScore": 2,
+    "highComplexityRatio": 0.4,
+    "pharmaPaymentHigh": 50000,
+    "pharmaPaymentVeryHigh": 100000,
+    "lowRiskMax": 25,
+    "mediumRiskMax": 50,
+    "highRiskMin": 50,
+    "zScoreThreshold": 2.5,
+    "isolationThreshold": 0.6
+  },
+  "savedAt": "2026-01-22T21:42:24.673Z"
+}

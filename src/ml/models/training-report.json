@@ -1,0 +1,41 @@
+{
+  "trainedAt": "2026-01-22T21:42:24.677Z",
+  "dataStats": {
+    "knownFraudCases": 34,
+    "contractorRecords": 100,
+    "exclusionRecords": 82709,
+    "trainingFeatures": 82733
+  },
+  "modelStats": {
+    "featureCount": 15,
+    "fraudPatternCount": 4,
+    "thresholds": {
+      "largeAwardMultiple": 3,
+      "growthRateAnomaly": 2,
+      "agencyConcentration": 0.8,
+      "soleSourceRatio": 0.5,
+      "billingZScore": 2,
+      "highComplexityRatio": 0.4,
+      "pharmaPaymentHigh": 50000,
+      "pharmaPaymentVeryHigh": 100000,
+      "lowRiskMax": 25,
+      "mediumRiskMax": 50,
+      "highRiskMin": 50,
+      "zScoreThreshold": 2.5,
+      "isolationThreshold": 0.6
+    }
+  },
+  "validation": {
+    "truePositiveRate": 0.058823529411764705,
+    "avgFraudScore": 15.441176470588236,
+    "avgNormalScore": 5.26,
+    "fraudScoreRange": {
+      "min": 0,
+      "max": 30
+    },
+    "normalScoreRange": {
+      "min": 0,
+      "max": 45
+    }
+  }
+}

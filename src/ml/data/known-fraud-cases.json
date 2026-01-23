@@ -1,0 +1,333 @@
+{
+  "description": "Known FCA settlements and fraud cases for model training",
+  "last_updated": "2026-01-22",
+  "sources": [
+    "DOJ Press Releases",
+    "HHS OIG Exclusions",
+    "Massachusetts AG Settlements",
+    "Public Court Records"
+  ],
+  "healthcare_settlements": [
+    {
+      "company": "GlaxoSmithKline",
+      "amount": 3000000000,
+      "year": 2012,
+      "fraud_type": ["off_label_marketing", "kickbacks", "safety_data_failure"],
+      "industry": "pharmaceutical",
+      "indicators": ["high_marketing_spend", "physician_payments", "rapid_sales_growth"]
+    },
+    {
+      "company": "Pfizer",
+      "amount": 2300000000,
+      "year": 2009,
+      "fraud_type": ["off_label_marketing"],
+      "industry": "pharmaceutical",
+      "indicators": ["physician_payments", "aggressive_sales_tactics"]
+    },
+    {
+      "company": "HCA Healthcare",
+      "amount": 840000000,
+      "year": 2003,
+      "fraud_type": ["upcoding", "unnecessary_services", "cost_report_fraud"],
+      "industry": "hospital_system",
+      "indicators": ["billing_above_peers", "high_complexity_codes", "rapid_revenue_growth"]
+    },
+    {
+      "company": "DaVita Healthcare",
+      "amount": 400000000,
+      "year": 2021,
+      "fraud_type": ["kickbacks"],
+      "industry": "dialysis",
+      "indicators": ["physician_payments", "referral_concentration", "joint_ventures"]
+    },
+    {
+      "company": "Quest Diagnostics",
+      "amount": 302000000,
+      "year": 2022,
+      "fraud_type": ["false_claims", "quality_issues"],
+      "industry": "laboratory",
+      "indicators": ["high_test_volume", "quality_complaints"]
+    },
+    {
+      "company": "Biogen",
+      "amount": 900000000,
+      "year": 2022,
+      "fraud_type": ["kickbacks"],
+      "industry": "pharmaceutical",
+      "indicators": ["speaker_programs", "physician_payments", "consultant_fees"]
+    },
+    {
+      "company": "Mallinckrodt",
+      "amount": 260000000,
+      "year": 2024,
+      "fraud_type": ["medicaid_rebate_fraud"],
+      "industry": "pharmaceutical",
+      "indicators": ["pricing_manipulation", "rebate_avoidance"]
+    },
+    {
+      "company": "Teva Pharmaceuticals",
+      "amount": 225000000,
+      "year": 2020,
+      "fraud_type": ["kickbacks"],
+      "industry": "pharmaceutical",
+      "indicators": ["speaker_programs", "copay_assistance_abuse"]
+    },
+    {
+      "company": "Novartis",
+      "amount": 678000000,
+      "year": 2020,
+      "fraud_type": ["kickbacks"],
+      "industry": "pharmaceutical",
+      "indicators": ["speaker_programs", "excessive_payments", "sham_advisory_boards"]
+    },
+    {
+      "company": "SaVida Health",
+      "amount": 2000000,
+      "year": 2024,
+      "fraud_type": ["upcoding", "unnecessary_services"],
+      "industry": "substance_abuse_treatment",
+      "state": "MA",
+      "indicators": ["high_em_codes", "excessive_drug_testing", "billing_above_peers"]
+    },
+    {
+      "company": "Universal Health Services",
+      "amount": 15000000,
+      "year": 2024,
+      "fraud_type": ["whistleblower_case"],
+      "industry": "behavioral_health",
+      "state": "MA",
+      "indicators": ["billing_irregularities"]
+    },
+    {
+      "company": "QOL Medical",
+      "amount": 47000000,
+      "year": 2025,
+      "fraud_type": ["kickbacks"],
+      "industry": "pharmaceutical",
+      "state": "MA",
+      "indicators": ["lab_payments", "inducement"]
+    },
+    {
+      "company": "Steward Health Care",
+      "amount": 15700000,
+      "year": 2024,
+      "fraud_type": ["false_claims", "unnecessary_services"],
+      "industry": "hospital_system",
+      "state": "MA",
+      "indicators": ["billing_irregularities", "rapid_expansion", "ownership_changes"]
+    },
+    {
+      "company": "Mass General Brigham",
+      "amount": 8200000,
+      "year": 2023,
+      "fraud_type": ["kickbacks", "research_fraud"],
+      "industry": "academic_medical_center",
+      "state": "MA",
+      "indicators": ["research_grants", "industry_payments"]
+    },
+    {
+      "company": "Boston Scientific",
+      "amount": 20000000,
+      "year": 2021,
+      "fraud_type": ["false_claims"],
+      "industry": "medical_devices",
+      "state": "MA",
+      "indicators": ["product_liability", "marketing_practices"]
+    },
+    {
+      "company": "Encompass Health",
+      "amount": 48000000,
+      "year": 2022,
+      "fraud_type": ["upcoding", "unnecessary_admissions"],
+      "industry": "rehabilitation",
+      "indicators": ["high_complexity_codes", "length_of_stay_outliers"]
+    },
+    {
+      "company": "CVS Health",
+      "amount": 5000000,
+      "year": 2022,
+      "fraud_type": ["false_claims"],
+      "industry": "pharmacy",
+      "state": "MA",
+      "indicators": ["prescription_irregularities", "billing_anomalies"]
+    },
+    {
+      "company": "Athenahealth",
+      "amount": 18250000,
+      "year": 2022,
+      "fraud_type": ["kickbacks"],
+      "industry": "health_it",
+      "state": "MA",
+      "indicators": ["referral_payments", "consulting_fees"]
+    },
+    {
+      "company": "Philips Respironics",
+      "amount": 479000000,
+      "year": 2024,
+      "fraud_type": ["false_claims", "quality_fraud"],
+      "industry": "medical_devices",
+      "indicators": ["product_defects", "warranty_claims", "recall_issues"]
+    },
+    {
+      "company": "Emergent BioSolutions",
+      "amount": 264000000,
+      "year": 2025,
+      "fraud_type": ["quality_fraud", "false_certifications"],
+      "industry": "pharmaceutical",
+      "indicators": ["manufacturing_issues", "quality_compliance", "rapid_contract_growth"]
+    }
+  ],
+  "contractor_settlements": [
+    {
+      "company": "Northrop Grumman",
+      "amount": 325000000,
+      "year": 2014,
+      "fraud_type": ["defective_pricing", "false_claims"],
+      "industry": "defense",
+      "indicators": ["cost_overruns", "sole_source", "large_modifications"]
+    },
+    {
+      "company": "Lockheed Martin",
+      "amount": 27500000,
+      "year": 2023,
+      "fraud_type": ["labor_mischarging"],
+      "industry": "defense",
+      "indicators": ["labor_rate_issues", "timecard_irregularities"]
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "amount": 377500000,
+      "year": 2023,
+      "fraud_type": ["overbilling", "false_claims"],
+      "industry": "consulting",
+      "indicators": ["cost_plus_contracts", "labor_mischarging"]
+    },
+    {
+      "company": "Science Applications International Corporation (SAIC)",
+      "amount": 500000000,
+      "year": 2012,
+      "fraud_type": ["overbilling", "kickbacks"],
+      "industry": "it_services",
+      "indicators": ["rapid_growth", "subcontractor_issues", "sole_source"]
+    },
+    {
+      "company": "KBR",
+      "amount": 579000000,
+      "year": 2020,
+      "fraud_type": ["kickbacks", "overbilling"],
+      "industry": "construction",
+      "indicators": ["overseas_contracts", "subcontractor_kickbacks"]
+    },
+    {
+      "company": "Triple Canopy",
+      "amount": 2600000,
+      "year": 2024,
+      "fraud_type": ["billing_fraud"],
+      "industry": "security",
+      "indicators": ["labor_qualifications", "false_certifications"]
+    },
+    {
+      "company": "Raytheon",
+      "amount": 27600000,
+      "year": 2019,
+      "fraud_type": ["defective_pricing"],
+      "industry": "defense",
+      "state": "MA",
+      "indicators": ["cost_data_issues", "subcontractor_markups"]
+    },
+    {
+      "company": "General Dynamics",
+      "amount": 55000000,
+      "year": 2023,
+      "fraud_type": ["false_claims", "defective_pricing"],
+      "industry": "defense",
+      "indicators": ["cost_overruns", "excessive_modifications"]
+    },
+    {
+      "company": "MITRE Corporation",
+      "amount": 4200000,
+      "year": 2020,
+      "fraud_type": ["labor_mischarging"],
+      "industry": "research",
+      "state": "MA",
+      "indicators": ["labor_rate_issues", "cost_plus_contracts"]
+    },
+    {
+      "company": "Perspecta",
+      "amount": 25000000,
+      "year": 2021,
+      "fraud_type": ["overbilling", "false_claims"],
+      "industry": "it_services",
+      "indicators": ["rapid_growth", "task_order_bundling", "labor_mischarging"]
+    },
+    {
+      "company": "Leidos",
+      "amount": 34000000,
+      "year": 2023,
+      "fraud_type": ["false_claims"],
+      "industry": "it_services",
+      "indicators": ["subcontractor_issues", "security_clearance_fraud"]
+    },
+    {
+      "company": "IBM Federal",
+      "amount": 14200000,
+      "year": 2022,
+      "fraud_type": ["overbilling"],
+      "industry": "it_services",
+      "indicators": ["software_licensing", "maintenance_charges"]
+    },
+    {
+      "company": "TransDigm",
+      "amount": 16100000,
+      "year": 2021,
+      "fraud_type": ["defective_pricing", "excessive_pricing"],
+      "industry": "defense",
+      "indicators": ["sole_source", "excessive_profit_margins", "acquisition_strategy"]
+    },
+    {
+      "company": "Draper Laboratory",
+      "amount": 3800000,
+      "year": 2020,
+      "fraud_type": ["labor_mischarging"],
+      "industry": "research",
+      "state": "MA",
+      "indicators": ["indirect_cost_allocation", "cost_plus_contracts"]
+    }
+  ],
+  "fraud_type_definitions": {
+    "upcoding": "Billing for more expensive services than provided",
+    "unbundling": "Separately billing services that should be bundled",
+    "phantom_billing": "Billing for services not rendered",
+    "kickbacks": "Payments to induce referrals",
+    "off_label_marketing": "Promoting drugs for unapproved uses",
+    "defective_pricing": "Submitting false cost/pricing data",
+    "labor_mischarging": "Billing wrong labor categories/rates",
+    "false_certifications": "Falsely certifying compliance",
+    "cost_report_fraud": "Manipulating Medicare cost reports"
+  },
+  "indicator_weights": {
+    "billing_above_peers": 25,
+    "physician_payments": 20,
+    "rapid_growth": 20,
+    "high_complexity_codes": 20,
+    "sole_source": 20,
+    "referral_concentration": 20,
+    "quality_complaints": 15,
+    "prior_exclusions": 30,
+    "ownership_changes": 15,
+    "excessive_drug_testing": 25,
+    "labor_rate_issues": 20,
+    "cost_overruns": 20,
+    "subcontractor_issues": 18,
+    "excessive_modifications": 15,
+    "cost_plus_contracts": 12,
+    "rapid_expansion": 18,
+    "agency_concentration": 15,
+    "large_award_concentration": 18,
+    "defense_concentration": 10,
+    "healthcare_concentration": 15,
+    "consulting_fees": 20,
+    "acquisition_strategy": 12,
+    "manufacturing_issues": 22
+  }
+}
