@@ -125,7 +125,25 @@ export async function analyzePhysicianPayments(physicianName, state = null) {
   }
 
   const riskFactors = [];
-  const { summary, paymentsByCompany } = paymentData;
+  const summary = paymentData.summary || { totalPayments: 0, paymentCount: 0, uniqueCompanies: 0 };
+  const paymentsByCompany = paymentData.paymentsByCompany || [];
+
+  // No payments found
+  if (summary.totalPayments === 0) {
+    return {
+      success: true,
+      physician: paymentData.physician || { searchName: physicianName, state },
+      summary,
+      riskAnalysis: {
+        riskScore: 0,
+        riskLevel: 'Low',
+        factors: [],
+      },
+      topPayingCompanies: [],
+      manualVerificationUrl: paymentData.manualSearchUrl || 'https://openpaymentsdata.cms.gov/search/physicians/by-name-and-location',
+      message: 'No payments found in Open Payments database. Try the manual search link for more options.',
+    };
+  }
 
   // Red flag: High total payments
   if (summary.totalPayments > 50000) {
@@ -138,7 +156,7 @@ export async function analyzePhysicianPayments(physicianName, state = null) {
   }
 
   // Red flag: Concentrated payments from single company
-  if (paymentsByCompany.length > 0) {
+  if (paymentsByCompany.length > 0 && summary.totalPayments > 0) {
     const topCompany = paymentsByCompany[0];
     const concentration = topCompany.total / summary.totalPayments;
 
@@ -178,8 +196,8 @@ export async function analyzePhysicianPayments(physicianName, state = null) {
 
   return {
     success: true,
-    physician: paymentData.physician,
-    summary: paymentData.summary,
+    physician: paymentData.physician || { searchName: physicianName, state },
+    summary,
     riskAnalysis: {
       riskScore: Math.min(riskScore, 100),
       riskLevel: riskScore >= 50 ? 'High' : riskScore >= 25 ? 'Medium' : 'Low',
