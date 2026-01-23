@@ -123,7 +123,19 @@ export default function ContractorSearch() {
 
       {error && (
         <div className="premium-card" style={{ borderColor: 'var(--accent)', marginBottom: '24px' }}>
-          <p style={{ color: 'var(--accent)', margin: 0 }}>Error: {error}</p>
+          <p style={{ color: 'var(--accent)', marginBottom: '12px' }}>Error: {error}</p>
+          <p style={{ color: '#888', marginBottom: '12px' }}>
+            The USASpending API may be temporarily unavailable. You can search manually:
+          </p>
+          <a
+            href={`https://www.usaspending.gov/search/?hash=&recipient=${encodeURIComponent(searchTerm)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            style={{ textDecoration: 'none', display: 'inline-block' }}
+          >
+            Search on USASpending.gov
+          </a>
         </div>
       )}
 

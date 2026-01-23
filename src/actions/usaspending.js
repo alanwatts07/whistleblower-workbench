@@ -77,10 +77,17 @@ export async function searchContractorAwards(searchText, options = {}) {
     };
   } catch (error) {
     console.error('USASpending search error:', error);
+    // Provide manual search URL as fallback
+    const manualSearchUrl = `https://www.usaspending.gov/search/?hash=a7f8b9c2e1d3f4a5b6c7d8e9f0a1b2c3&filters=${encodeURIComponent(JSON.stringify({
+      recipientName: searchText,
+      timePeriod: [{ start_date: startDate, end_date: endDate }],
+    }))}`;
     return {
       success: false,
-      error: error.name === 'AbortError' ? 'Request timed out' : error.message,
+      error: error.name === 'AbortError' ? 'Request timed out' : `API unavailable: ${error.message}`,
       results: [],
+      manualSearchUrl: `https://www.usaspending.gov/search/?hash=&recipient=${encodeURIComponent(searchText)}`,
+      message: 'API request failed. Try the manual search link.',
     };
   }
 }
@@ -155,7 +162,12 @@ export async function searchAwardsByState(stateCode, options = {}) {
       totalResults: data.page_metadata?.total || 0,
     };
   } catch (error) {
-    return { success: false, error: error.name === 'AbortError' ? 'Request timed out' : error.message, results: [] };
+    return {
+      success: false,
+      error: error.name === 'AbortError' ? 'Request timed out' : `API unavailable: ${error.message}`,
+      results: [],
+      manualSearchUrl: `https://www.usaspending.gov/search/?hash=&state=${stateCode}`,
+    };
   }
 }
 
@@ -190,11 +202,23 @@ export async function analyzeContractorRisk(searchText) {
     limit: 100,
   });
 
-  if (!result.success || result.results.length === 0) {
+  if (!result.success) {
     return {
       success: false,
-      error: result.error || 'No awards found',
+      error: result.error || 'API unavailable',
       riskFactors: [],
+      summary: { totalAwards: 0, totalAwarded: 0, riskScore: 0, riskLevel: 'Unknown' },
+      manualSearchUrl: result.manualSearchUrl,
+    };
+  }
+
+  if (result.results.length === 0) {
+    return {
+      success: true,
+      error: null,
+      riskFactors: [],
+      summary: { totalAwards: 0, totalAwarded: 0, riskScore: 0, riskLevel: 'Low' },
+      message: 'No federal awards found for this contractor',
     };
   }
 
