@@ -114,6 +114,28 @@ GET  /api/healthcare-providers/risky  # Pre-computed high-risk provider list
 POST /api/ml/score              # Score arbitrary features against trained model
 ```
 
+## Future Roadmap
+
+### v2.0 - Enhanced Data Pipeline
+- **Scheduled Data Ingestion** - Cron jobs for nightly OIG/USASpending sync with incremental updates
+- **PostgreSQL Backend** - Replace in-memory data with persistent storage for historical trend analysis
+- **Alert System** - Email/Slack notifications when new high-risk entities are detected
+
+### v2.1 - Advanced Analytics
+- **Network Graph Analysis** - Map relationships between contractors, subcontractors, and shell companies
+- **NLP Document Analysis** - Extract fraud indicators from contract descriptions and modification justifications
+- **Temporal Pattern Detection** - Identify suspicious timing (fiscal year-end spending spikes, post-award modifications)
+
+### v3.0 - Multi-State Expansion
+- **State Medicaid Integration** - Extend beyond Massachusetts to other state Medicaid exclusion databases
+- **Multi-jurisdiction Search** - Cross-reference entities across state and federal exclusion lists simultaneously
+- **Case Management Module** - Track investigation status, document findings, and generate qui tam attorney briefs
+
+### Future Considerations
+- **LLM-Powered Research Assistant** - Natural language queries against contract and payment databases
+- **Public Records Integration** - Court filings, corporate registrations, bankruptcy records
+- **Collaboration Features** - Multi-user workspaces for investigative teams
+
 ## Legal Disclaimer
 
 This tool is for research and educational purposes. It identifies statistical patterns that may warrant further investigation but does not constitute evidence of fraud. All findings should be verified through proper legal channels before any action is taken. Consult with a qui tam attorney before filing any False Claims Act lawsuit.
